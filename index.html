@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -23,33 +23,37 @@
     </nav>
 
     <!-- Hero Banner -->
-    <section class="bg-blue-900 text-white py-20">
+    <section class="bg-cover bg-no-repeat bg-center h-96" style="background-image: url('https://source.unsplash.com/random?data');">
         <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-4">Welcome to Your Website</h1>
-            <p class="text-lg mb-8">A brief description of your business or service.</p>
-            <img src="https://source.unsplash.com/random?data" alt="Hero Image" class="mx-auto w-3/4 rounded-lg shadow-lg">
+            <div class="bg-white bg-opacity-75 p-4 rounded-lg shadow-lg mx-4 my-12">
+                <h1 class="text-4xl font-bold mb-4">Welcome to Your Website</h1>
+                <p class="text-lg mb-8">A brief description of your business or service.</p>
+            </div>
         </div>
     </section>
 
     <!-- Three Cards -->
-    <section class="py-16">
+    <section class="py-8">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold mb-2">Card 1 Title</h2>
                 <p class="text-gray-600">Card 1 description goes here.</p>
+                <img src="https://source.unsplash.com/random?card1" alt="Card 1" class="mt-4 rounded-lg">
             </div>
 
             <!-- Card 2 -->
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold mb-2">Card 2 Title</h2>
                 <p class="text-gray-600">Card 2 description goes here.</p>
+                <img src="https://source.unsplash.com/random?card2" alt="Card 2" class="mt-4 rounded-lg">
             </div>
 
             <!-- Card 3 -->
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold mb-2">Card 3 Title</h2>
                 <p class="text-gray-600">Card 3 description goes here.</p>
+                <img src="https://source.unsplash.com/random?card3" alt="Card 3" class="mt-4 rounded-lg">
             </div>
         </div>
     </section>
@@ -64,7 +68,7 @@
     </section>
 
     <!-- Beautiful Footer -->
-    <footer class="bg-blue-500 text-white py-8">
+    <footer class="bg-blue-500 text-white py-8 mt-8">
         <div class="container mx-auto text-center">
             <p>&copy; 2023 Your Company. All rights reserved.</p>
         </div>
