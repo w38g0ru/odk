@@ -3,89 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODK Data Management Service</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #007BFF;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 10px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .section {
-            margin: 20px 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <title>ODK Services</title>
+    <!-- Include the Tailwind CSS stylesheet -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>ODK Data Management Service</h1>
+    <header class="bg-gray-800 text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">ODK Services</h1>
+            <ul class="space-x-4">
+                <li><a href="#about" class="text-white">About Us</a></li>
+                <li><a href="#services" class="text-white">Services</a></li>
+                <li><a href="#contact" class="text-white">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <section id="hero" class="bg-cover bg-center text-white py-16" style="background-image: url('background.jpg');">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-4">Welcome to ODK Services</h2>
+            <p class="text-lg mb-8">Your trusted partner for Open Data Kit solutions.</p>
+            <a href="#contact" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
 
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Us</h2>
-            <p>We are a dedicated ODK data management service provider, committed to helping you efficiently collect, manage, and analyze your data.</p>
-        </section>
+    <section id="about" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-8">About Us</h2>
+            <p class="text-lg">We are a team of ODK experts dedicated to helping organizations collect, manage, and analyze data efficiently.</p>
+        </div>
+    </section>
 
-        <section id="services" class="section">
-            <h2>Services</h2>
-            <ul>
-                <li>Data Collection</li>
-                <li>Data Cleaning and Validation</li>
-                <li>Data Analysis and Reporting</li>
-                <li>Data Security and Privacy</li>
-            </ul>
-        </section>
+    <section id="services" class="bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Data Collection</h3>
+                    <p class="text-gray-700">Efficiently collect data in the field using ODK tools and mobile devices.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Data Analysis</h3>
+                    <p class="text-gray-700">Transform your data into actionable insights with our data analysis services.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Custom Solutions</h3>
+                    <p class="text-gray-700">We can tailor ODK solutions to meet your specific data collection needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>If you have any questions or would like to inquire about our services, please feel free to contact us:</p>
-            <p>Email: info@odkdata.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </div>
+    <section id="contact" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+            <p class="text-lg mb-8">Ready to get started? Contact us for a free consultation.</p>
+            <a href="mailto:contact@example.com" class="btn btn-primary">Email Us</a>
+        </div>
+    </section>
 
-    <footer>
-        &copy; 2023 ODK Data Management Service
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 ODK Services</p>
+        </div>
     </footer>
 </body>
 </html>
