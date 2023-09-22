@@ -3,68 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODK Services</title>
-    <!-- Include the Tailwind CSS stylesheet -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Your Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-gray-800 text-white py-4">
-        <nav class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-semibold">ODK Services</h1>
-            <ul class="space-x-4">
-                <li><a href="#about" class="text-white">About Us</a></li>
-                <li><a href="#services" class="text-white">Services</a></li>
-                <li><a href="#contact" class="text-white">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-bold">Your Logo</a>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About</a></li>
+                    <li><a href="#" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section id="hero" class="bg-cover bg-center text-white py-16" style="background-image: url('background.jpg');">
+    <!-- Hero Banner -->
+    <section class="bg-blue-900 text-white py-20">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-4">Welcome to ODK Services</h2>
-            <p class="text-lg mb-8">Your trusted partner for Open Data Kit solutions.</p>
-            <a href="#contact" class="btn btn-primary">Contact Us</a>
+            <h1 class="text-4xl font-bold mb-4">Welcome to Your Website</h1>
+            <p class="text-lg mb-8">A brief description of your business or service.</p>
+            <img src="splash-image.jpg" alt="Hero Image" class="mx-auto w-3/4 rounded-lg shadow-lg">
         </div>
     </section>
 
-    <section id="about" class="py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold mb-8">About Us</h2>
-            <p class="text-lg">We are a team of ODK experts dedicated to helping organizations collect, manage, and analyze data efficiently.</p>
-        </div>
-    </section>
+    <!-- Three Cards -->
+    <section class="py-16">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Card 1 Title</h2>
+                <p class="text-gray-600">Card 1 description goes here.</p>
+            </div>
 
-    <section id="services" class="bg-gray-100 py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Data Collection</h3>
-                    <p class="text-gray-700">Efficiently collect data in the field using ODK tools and mobile devices.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Data Analysis</h3>
-                    <p class="text-gray-700">Transform your data into actionable insights with our data analysis services.</p>
-                </div>
-                <div class="bg-white rounded-lg p-6 shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Custom Solutions</h3>
-                    <p class="text-gray-700">We can tailor ODK solutions to meet your specific data collection needs.</p>
-                </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Card 2 Title</h2>
+                <p class="text-gray-600">Card 2 description goes here.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Card 3 Title</h2>
+                <p class="text-gray-600">Card 3 description goes here.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-16">
+    <!-- Service Box -->
+    <section class="bg-blue-100 py-16">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
-            <p class="text-lg mb-8">Ready to get started? Contact us for a free consultation.</p>
-            <a href="mailto:contact@example.com" class="btn btn-primary">Email Us</a>
+            <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+            <p class="text-lg mb-8">Discover what we can do for you.</p>
+            <!-- Add your service boxes here -->
         </div>
     </section>
 
-    <footer class="bg-gray-800 text-white py-4">
+    <!-- Beautiful Footer -->
+    <footer class="bg-blue-500 text-white py-8">
         <div class="container mx-auto text-center">
-            <p>&copy; 2023 ODK Services</p>
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
         </div>
     </footer>
 </body>
